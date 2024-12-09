@@ -4,7 +4,7 @@ from groq import Groq
 import os
 
 # Set page config
-st.set_page_config(page_title="هوش مصنوعی داستان سرا", layout="wide")
+st.set_page_config(page_title="هوش مصنوعی  کمک آموزشی", layout="wide")
 os.environ["GROQ_API_KEY"] = "YOUR-API-KEY"
 
 # Initialize Groq client
@@ -15,7 +15,7 @@ if "messages" not in st.session_state:
     st.session_state.messages = []
 
 # App title
-st.title("هوش مصنوعی داستان سرای کیارش خاندانی")
+st.title("هوش مصنوعی کمک آموزشی کیارش خاندانی")
 
 # Sidebar for model selection
 model = st.sidebar.selectbox(
@@ -24,7 +24,7 @@ model = st.sidebar.selectbox(
 )
 
 # Chat interface
-st.write("هوش مصنوعی داستان سرا")
+st.write("هوش مصنوعی کمک آموزشی")
 
 # Display chat messages
 for message in st.session_state.messages:
@@ -32,8 +32,8 @@ for message in st.session_state.messages:
         st.write(message["content"])
 
 # Chat input
-if prompt := st.chat_input("بگویید چه داستانی  می خواهید؟"):
-    st.session_state.messages.append({"role": "system", "content": "You are a science teacher. Answer science questions in an engaging and accurate way in Persian."})
+if prompt := st.chat_input("سوالات خود را بپرسید"):
+    st.session_state.messages.append({"role": "system", "content": "You are an exceptionally good science teacher.You answer science questions in an accurate and accessible way in Persian."})
 
     # Add user message to chat history
     st.session_state.messages.append({"role": "user", "content": prompt})
