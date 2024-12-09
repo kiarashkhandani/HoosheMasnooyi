@@ -5,7 +5,7 @@ import os
 
 # Set page config
 st.set_page_config(page_title="هوش مصنوعی  کمک آموزشی", layout="wide")
-os.environ["GROQ_API_KEY"] = "YOUR-API-KEY"
+#os.environ["GROQ_API_KEY"] = "YOUR-API-KEY"
 
 # Initialize Groq client
 client = Groq()
