@@ -1,8 +1,12 @@
 سلام این پروژه من برای NoFanFest  است
 برای اجرای برنامه ابتدا پیش نیاز ها را نصب فرمایید:
+
 pip install groq
+
 pip install streamlit
+
 سپس یک کلید ای پی آی از سایت Groq دریافت کرده و به عنوان متغییر محیط برنامه نویسی وارد کنید:
+
 echo GROQ_API_KEY="XXXXXXXXXXXXXXX"
 
 
